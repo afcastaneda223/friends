@@ -1,5 +1,13 @@
-<h1>New Friend</h1>
+<div class="card">
+  <div class="card-header text-center">
+    <h1>New Friend</h1>
+  </div>
+  <div class="card-body">
+    <%= render 'form', friend: @friend %>
+    <%= link_to 'Back', friends_path, class:"btn btn-dark mt-3" %>
+  </div>
+</div>
 
-<%= render 'form', friend: @friend %>
 
-<%= link_to 'Back', friends_path, class:"btn btn-dark mt-3" %>
+
+
