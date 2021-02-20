@@ -12,30 +12,29 @@
   <% end %>
 
   <div class="field mb-3">
-    <%= form.label :first_name, class: "form-label" %>
-    <%= form.text_field :first_name, class:"form-control" %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
   </div>
 
   <div class="field mb-3">
-    <%= form.label :last_name, class: "form-label" %>
-    <%= form.text_field :last_name, class:"form-control" %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
   </div>
 
   <div class="field mb-3">
-    <%= form.label :email, class: "form-label" %>
-    <%= form.text_field :email, class:"form-control" %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Email" %>
   </div>
 
   <div class="field mb-3">
-    <%= form.label :phone, class: "form-label" %>
-    <%= form.text_field :phone, class:"form-control" %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Phone" %>
   </div>
 
   <div class="field mb-3">
-    <%= form.label :twitter, class: "form-label" %>
-    <%= form.text_field :twitter, class:"form-control" %>
+    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter" %>
   </div>
 
+  <div class="field mb-3">
+    <%= form.number_field :user_id, class:"form-control", value: current_user.id, type: :hidden %>
+  </div>
+<%=  %>
   <div class="actions">
     <%= form.submit class:'btn btn-primary' %>
   </div>
